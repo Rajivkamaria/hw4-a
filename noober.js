@@ -7,15 +7,15 @@ window.addEventListener('DOMContentLoaded', async function() {
   
   // 🔥 start here: write the recipe (algorithm), then write the code
   for (let i=0;i<json.length;i++){
-    let ride = json[i]
-    let passengerFirstname = ride.passengerDetails.first
-    let passengerLastname = ride.passengerDetails.last
-    let passengerPhone = ride.passengerDetails.phoneNumber
-    let locationAddress = ride.pickupLocation.address
-    let locationCityStateZip = `${ride.pickupLocation.city}, ${ride.pickupLocation.state}, ${ride.pickupLocation.zip}`
-    let dropLocationAddress = ride.dropoffLocation.address
-    let dropLocationCityStateZip = `${ride.dropoffLocation.city}, ${ride.dropoffLocation.state}, ${ride.dropoffLocation.zip}`
-    let passengerAmount = ride.numberOfPassengers
+    let rideinfo = json[i]
+    let passengerFirstname = rideinfo.passengerDetails.first
+    let passengerLastname = rideinfo.passengerDetails.last
+    let passengerPhone = rideinfo.passengerDetails.phoneNumber
+    let locationAddress = rideinfo.pickupLocation.address
+    let locationCityStateZip = `${rideinfo.pickupLocation.city}, ${rideinfo.pickupLocation.state}, ${rideinfo.pickupLocation.zip}`
+    let dropLocationAddress = rideinfo.dropoffLocation.address
+    let dropLocationCityStateZip = `${rideinfo.dropoffLocation.city}, ${rideinfo.dropoffLocation.state}, ${rideinfo.dropoffLocation.zip}`
+    let passengerAmount = rideinfo.numberOfPassengers
 
     // Identify what kind of ride it is
         let rideElements = document.querySelector(`.rides`)
