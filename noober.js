@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         let rideElements = document.querySelector(`.rides`)
 
     // Check if the ride is Noober Purple
-    if (ride.purpleRequested == true) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    if (rideinfo.purpleRequested == true) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober Purple</span>
   </h1>
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       </div>
     </div>`)}
 
-    else if (ride.numberOfPassengers > 3) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    else if (rideinfo.numberOfPassengers > 3) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober XL</span>
   </h1>
