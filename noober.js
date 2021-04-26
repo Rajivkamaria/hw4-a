@@ -11,10 +11,10 @@ window.addEventListener('DOMContentLoaded', async function() {
     let Firstname = rideinfo.passengerDetails.first
     let Lastname = rideinfo.passengerDetails.last
     let Phone = rideinfo.passengerDetails.phoneNumber
-    let locationAddress = rideinfo.pickupLocation.address
-    let locationCityStateZip = `${rideinfo.pickupLocation.city}, ${rideinfo.pickupLocation.state}, ${rideinfo.pickupLocation.zip}`
-    let dropLocationAddress = rideinfo.dropoffLocation.address
-    let dropLocationCityStateZip = `${rideinfo.dropoffLocation.city}, ${rideinfo.dropoffLocation.state}, ${rideinfo.dropoffLocation.zip}`
+    let Address = rideinfo.pickupLocation.address
+    let City = `${rideinfo.pickupLocation.city}, ${rideinfo.pickupLocation.state}, ${rideinfo.pickupLocation.zip}`
+    let DropAddress = rideinfo.dropoffLocation.address
+    let DropCity = `${rideinfo.dropoffLocation.city}, ${rideinfo.dropoffLocation.state}, ${rideinfo.dropoffLocation.zip}`
     let Amount = rideinfo.numberOfPassengers
 
     // Identify what kind of ride it is
@@ -41,13 +41,13 @@ window.addEventListener('DOMContentLoaded', async function() {
     <div class="mt-4 flex">
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">PICKUP</div>
-        <p>${locationAddress}</p>
-        <p>${locationCityStateZip}</p>
+        <p>${Address}</p>
+        <p>${City}</p>
       </div>
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">DROPOFF</div>
-        <p>${dropLocationAddress}</p>
-        <p>${dropLocationCityStateZip}</p>
+        <p>${DropAddress}</p>
+        <p>${DropCity}</p>
       </div>
     </div>`)}
 
@@ -70,13 +70,13 @@ window.addEventListener('DOMContentLoaded', async function() {
     <div class="mt-4 flex">
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">PICKUP</div>
-        <p>${locationAddress}</p>
-        <p>${locationCityStateZip}</p>
+        <p>${Address}</p>
+        <p>${City}</p>
       </div>
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">DROPOFF</div>
-        <p>${dropLocationAddress}</p>
-        <p>${dropLocationCityStateZip}</p>
+        <p>${DropAddress}</p>
+        <p>${DropCity}</p>
       </div>
     </div>`)}
 
@@ -99,13 +99,13 @@ window.addEventListener('DOMContentLoaded', async function() {
     <div class="mt-4 flex">
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">PICKUP</div>
-        <p>${locationAddress}</p>
-        <p>${locationCityStateZip}</p>
+        <p>${Address}</p>
+        <p>${City}</p>
       </div>
       <div class="w-1/2">
         <div class="text-sm font-bold text-gray-600">DROPOFF</div>
-        <p>${dropLocationAddress}</p>
-        <p>${dropLocationCityStateZip}</p>
+        <p>${DropAddress}</p>
+        <p>${DropCity}</p>
       </div>
     </div>`)}
   }
