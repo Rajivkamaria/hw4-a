@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', async function() {
   console.dir(json)
   
   // 🔥 start here: write the recipe (algorithm), then write the code
-  for (let i=0, i<json.length; i++)
+  for (let i=0; i<json.length; i++) {
   let ride = json[i]
   let passengerFirstname = ride.passengerDetails.first
   let passengerLastname = ride.passengerDetails.last
@@ -25,7 +25,6 @@ window.addEventListener('DOMContentLoaded', async function() {
   <i class="fas fa-car-side"></i>
   <span>Noober Purple</span>
 </h1>
-
 
 <div class="border-4 border-purple-500 p-4 my-4 text-left">
   <div class="flex">
@@ -109,5 +108,4 @@ window.addEventListener('DOMContentLoaded', async function() {
     </div>
   </div>`)}
 }
-})
 })
