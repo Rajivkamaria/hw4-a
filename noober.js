@@ -8,14 +8,14 @@ window.addEventListener('DOMContentLoaded', async function() {
   // 🔥 start here: write the recipe (algorithm), then write the code
   for (let i=0;i<json.length;i++){
     let rideinfo = json[i]
-    let passengerFirstname = rideinfo.passengerDetails.first
-    let passengerLastname = rideinfo.passengerDetails.last
-    let passengerPhone = rideinfo.passengerDetails.phoneNumber
+    let Firstname = rideinfo.passengerDetails.first
+    let Lastname = rideinfo.passengerDetails.last
+    let Phone = rideinfo.passengerDetails.phoneNumber
     let locationAddress = rideinfo.pickupLocation.address
     let locationCityStateZip = `${rideinfo.pickupLocation.city}, ${rideinfo.pickupLocation.state}, ${rideinfo.pickupLocation.zip}`
     let dropLocationAddress = rideinfo.dropoffLocation.address
     let dropLocationCityStateZip = `${rideinfo.dropoffLocation.city}, ${rideinfo.dropoffLocation.state}, ${rideinfo.dropoffLocation.zip}`
-    let passengerAmount = rideinfo.numberOfPassengers
+    let Amount = rideinfo.numberOfPassengers
 
     // Identify what kind of ride it is
         let rideElements = document.querySelector(`.rides`)
@@ -30,11 +30,11 @@ window.addEventListener('DOMContentLoaded', async function() {
   <div class="border-4 border-purple-500 p-4 my-4 text-left">
     <div class="flex">
       <div class="w-1/2">
-        <h2 class="text-2xl py-1">${passengerFirstname} ${passengerLastname}</h2>
-        <p class="font-bold text-gray-600">${passengerPhone}</p>
+        <h2 class="text-2xl py-1">${Firstname} ${Lastname}</h2>
+        <p class="font-bold text-gray-600">${Phone}</p>
       </div>
       <div class="w-1/2 text-right">
-        <span class="rounded-xl bg-purple-600 text-white p-2">${passengerAmount} passengers
+        <span class="rounded-xl bg-purple-600 text-white p-2">${Amount} passengers
         </span>
       </div>
     </div>
@@ -51,7 +51,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       </div>
     </div>`)}
 
-    else if (rideinfo.numberOfPassengers > 3) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+    else if (rideinfo.Passengers > 3) {rideElements.insertAdjacentHTML(`beforeend`,`<h1 class="inline-block mt-8 px-4 py-2 rounded-xl text-2xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
     <i class="fas fa-car-side"></i>
     <span>Noober XL</span>
   </h1>
@@ -59,11 +59,11 @@ window.addEventListener('DOMContentLoaded', async function() {
   <div class="border-4 border-gray-900 p-4 my-4 text-left">
       <div class="flex">
         <div class="w-1/2">
-          <h2 class="text-2xl py-1">${passengerFirstname} ${passengerLastname}</h2>
-        <p class="font-bold text-gray-600">${passengerPhone}</p>
+          <h2 class="text-2xl py-1">${Firstname} ${Lastname}</h2>
+        <p class="font-bold text-gray-600">${Phone}</p>
       </div>
       <div class="w-1/2 text-right">
-        <span class="rounded-xl bg-gray-600 text-white p-2">${passengerAmount} passengers
+        <span class="rounded-xl bg-gray-600 text-white p-2">${Amount} passengers
         </span>
       </div>
     </div>
@@ -88,11 +88,11 @@ window.addEventListener('DOMContentLoaded', async function() {
   <div class="border-4 border-gray-900 p-4 my-4 text-left">
       <div class="flex">
         <div class="w-1/2">
-          <h2 class="text-2xl py-1">${passengerFirstname} ${passengerLastname}</h2>
-        <p class="font-bold text-gray-600">${passengerPhone}</p>
+          <h2 class="text-2xl py-1">${Firstname} ${Lastname}</h2>
+        <p class="font-bold text-gray-600">${Phone}</p>
       </div>
       <div class="w-1/2 text-right">
-        <span class="rounded-xl bg-gray-600 text-white p-2">${passengerAmount} passengers
+        <span class="rounded-xl bg-gray-600 text-white p-2">${Amount} passengers
         </span>
       </div>
     </div>
